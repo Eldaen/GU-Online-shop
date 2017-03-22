@@ -179,6 +179,7 @@
 .hover img {
     opacity: 0.2;
 }
+
 .hover .card {
     position: absolute;
     top: 98px;
@@ -227,12 +228,12 @@
 }
 
 .all_products {
-    display:block;
-    background-color:  #f16d7f;
+    display: block;
+    background-color: #f16d7f;
     width: 212px;
     height: 48px;
     margin: 100px auto 113px;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 700;
     line-height: 14px;
@@ -240,30 +241,32 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 .all_products i {
-    font-size: 15px;/* Приближение из-за подстановки шрифтов */
+    font-size: 15px; /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     margin-left: 5px;
 
 }
+
 .clr {
     clear: both;
 }
 
-.feature_offer{
+.feature_offer {
     width: 1140px;
     height: 529px;
     background: url("images/feature_image.png") no-repeat left;
-    background-color:  #222224;
+    background-color: #222224;
 }
 
 .feature_content {
-    float:right;
+    float: right;
     width: 373px;
     height: 529px;
     padding: 48px 43px 36px 114px;
     box-sizing: border-box;
-    color:  #fbfbfb;
+    color: #fbfbfb;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -274,6 +277,7 @@
     position: relative;
     margin-top: 60px;
 }
+
 .feature_content div:first-child {
     margin-top: 0;
 }
@@ -289,9 +293,9 @@
 }
 
 .feature_content h3 {
-    color:  #fbfbfb;
-    font-size: 20px;/
-    font-weight: 700;
+    color: #fbfbfb;
+    font-size: 20px;
+/ font-weight: 700;
     text-align: left;
     margin-bottom: 13px;
     line-height: 18px;
@@ -300,9 +304,11 @@
 .feature_content .delivery:before {
     background: url("images/delivery.png") no-repeat;
 }
+
 .feature_content .discount:before {
     background: url("images/discount.png") no-repeat;
 }
+
 .feature_content .quality:before {
     background: url("images/quality.png") no-repeat;
 }
@@ -315,10 +321,10 @@
 }
 
 .bg {
-    position:absolute;
+    position: absolute;
     content: " ";
     z-index: 0;
-    background-color:  rgba(242, 242, 242, 0.5);
+    background-color: rgba(242, 242, 242, 0.5);
     width: 1600px;
     height: 438px;
 }
@@ -333,13 +339,14 @@
     position: relative;
     padding: 123px 73px 0 341px;
     box-sizing: border-box;
-    color:  #000;
-    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    color: #000;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
     font-style: italic;
-    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    line-height: 26px; /* Приближение из-за подстановки шрифтов */
     text-align: left;
 
 }
+
 .text_block:before {
     position: absolute;
     content: " ";
@@ -352,21 +359,22 @@
 }
 
 .credits .name {
-    color:  #f16d7f;
-    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    color: #f16d7f;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
-    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    line-height: 26px; /* Приближение из-за подстановки шрифтов */
     text-align: left;
 }
 
 .credits {
     margin-top: 12px;
-    color:  #222224;
-    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    color: #222224;
+    font-size: 12px; /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
-    line-height: 14px;/* Приближение из-за подстановки шрифтов */
+    line-height: 14px; /* Приближение из-за подстановки шрифтов */
     text-align: left;
 }
+
 .switcher {
     margin-top: 39px;
 }
@@ -378,29 +386,71 @@
     height: 4px;
     margin-right: 13px;
 }
+
 .switcher .active {
-    background-color:  #f16d7f;
+    background-color: #f16d7f;
 }
+
 .sub_form .heading {
     float: left;
-    padding: 148px 0 0 91px;
+    padding: 148px 0 0 148px;
     box-sizing: border-box;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
-    line-height: 14px;/* Приближение из-за подстановки шрифтов */
+    line-height: 14px; /* Приближение из-за подстановки шрифтов */
     text-align: center;
     text-transform: uppercase;
 }
+
 .sub_form .heading h3 {
     text-transform: uppercase;
-    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
-    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
     text-align: center;
 }
 
 .form {
     margin-top: 35px;
+    margin-left: 92px;
+    box-sizing: border-box;
+}
+
+.form input[type=text] {
+    display: inline-block;
+    padding: 18px 0 18px 28px;
+    border: none;
+    border-radius: 23px 0 0 23px;
+    background-color:  #e1e1e1;
+    width: 280px;
+    color:  rgba(34, 34, 36, 0.87);
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: left;
+    box-sizing: border-box;
+    height: 46px;
+
+}
+
+.form input[type=submit] {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 104px;
+    background-color:  #f16d7f;
+    padding: 18px 23px 18px 0;
+    border-radius: 0 23px 23px 0;
+    text-align: right;
+    color:  #ffffff;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    border: none;
+    height: 46px;
+    line-height: 10px;
+
+}
+
+.info {
+    margin-top: 100px;
 }
 
 
