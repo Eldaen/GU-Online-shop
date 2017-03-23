@@ -102,11 +102,11 @@
 .drop_down_menu:hover {
     display: block
 }
-.drop_down .triangle {
+.header .triangle {
     position: absolute;
     font-size: 16px;
     top: -15px;
-    left: 130px;
+    left: 62px;
     color: #fff;
     text-shadow: 0px -1px 0px #e8e8e8;
     transform: scale(1.5, 1);
@@ -159,6 +159,111 @@ label[for="search"] i {
     font-weight: 700;
     line-height: 18px;
     text-align: center;
+}
+.header .basket .drop_down {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    top: 35px;
+    left: -25px;
+    padding: 0 17px 21px 17px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #ffffff;
+    width: 262px;
+    height: 472px;
+}
+.basket:hover .drop_down{
+    display: block;
+}
+.basket .drop_down .triangle {
+    position: absolute;
+    z-index: 10;
+    font-size: 16px;
+    top: -15px;
+    left: 34px;
+    color: #fff;
+    text-shadow: 0px -1px 0px #e8e8e8;
+    transform: scale(1.5, 1);
+}
+.basket .purchase_1, .basket .purchase_2 {
+    position: relative;
+    height: 85px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+    padding-top: 4px;
+    border-bottom: 1px solid #e8e8e8;
+    color:  #222222;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+.purchase_1 {
+    background: url(images/item_1.png) no-repeat;
+}
+.purchase_2 {
+    background: url(images/item_2.png) no-repeat;
+}
+.basket .rating i {
+    color:  #e4af48;
+    font-size: 10px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: right;
+}
+.basket .ammount {
+    color:  #f16d7f;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: left;
+}
+.basket .price {
+    color:  #f16d7f;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: left;
+}
+.basket .total {
+    margin-top: 20px;
+}
+.basket .total, .basket .total span {
+    color: #222222;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+.basket .total span {
+    display: block;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.basket .checkout {
+    margin-top: 30px;
+    border-width: 1px;
+    border-color:  #f16d7f;
+    border-style: solid;
+    width: 223px;
+    height: 48px;
+    color:  #f16d7f;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+.basket .go_cart {
+    margin-top: 20px;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    width: 225px;
+    height: 50px;
+    color:  #4a494a;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
 }
 
 .my_account {
