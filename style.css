@@ -56,6 +56,61 @@
     text-align: right;
     margin-left: 2px;
 }
+.header .drop_down_menu{
+    position: absolute;
+    display: none;
+    z-index: 5;
+    top: 35px;
+    left: -3px;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 262px;
+    padding: 6px 12px 20px 16px;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+}
+/*.header .drop_down_menu:after {
+    content: '';
+    position: absolute; !* Абсолютное позиционирование *!
+    left: 60px;
+    top: -20px; !* Положение треугольника *!
+    border: 10px solid transparent; !* Прозрачные границы *!
+    border-bottom: 10px solid white; !* Добавляем треугольник *!
+}*/
+.header .drop_down_menu h4{
+    display: block;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 4px;
+    line-height:32px;
+    text-align: left;
+}
+.drop_down_menu li {
+    display: block;
+    text-align: left;
+    color:  #4e4e4e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-left: 4px;
+}
+.drop_down_menu ul{
+    margin-bottom:5px;
+}
+.header .drop_down:hover .drop_down_menu{
+    display: block;
+}
+.drop_down_menu:hover {
+    display: block
+}
+.drop_down .triangle {
+    position: absolute;
+    font-size: 16px;
+    top: -15px;
+    left: 130px;
+    color: #fff;
+    text-shadow: 0px -1px 0px #e8e8e8;
+    transform: scale(1.5, 1);
+}
 #search {
     box-sizing: border-box;
     background-color:  #ffffff;
@@ -107,6 +162,7 @@ label[for="search"] i {
 }
 
 .my_account {
+    position: relative;
     background: #f16d7f;
     margin-left: 20px;
     display: inline-block;
@@ -119,14 +175,90 @@ label[for="search"] i {
     font-weight: 400;
     padding: 1px 16px 7px 0;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .my_account i {
     padding-left: 9px;
 }
 
 .nav {
+    position: relative;
     background-color: #ffffff;
     height: 51px;
+}
+.nav:hover .drop_down {
+    display: block;
+}
+.nav .drop_down {
+    position: absolute; /* сделать none */
+    display: none;
+    float: left;
+    top: 49px;
+    width: 846px;
+    left: 500px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+
+    padding: 20px;
+}
+.nav .triangle {
+    position: absolute;
+    font-size: 16px;
+    top: -15px;
+    left: 130px;
+    color: #fff;
+    text-shadow: 0px -1px 0px #e8e8e8;
+    transform: scale(1.5, 1);
+}
+
+.nav .menu_column{
+    float: left;
+    width: 33.33%;
+}
+.nav .menu_column a{
+    display: block;
+    text-decoration: none;
+    color:  #646464;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 34px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    transform: scaleX(1.0015);
+}
+.nav .menu_column li {
+    display: block;
+    text-align: left;
+    color:  #4e4e4e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 34px;
+    padding-left: 4px;
+}
+.nav .menu_column h4{
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 4px;
+    line-height:32px;
+    text-align: left;
+}
+.nav .drop_down .promo {
+    float: left;
+    width: 33.33%;
+    margin-top: 12px;
+    display: block;
+    height: 118px;
+    background: url("images/promo.png") no-repeat;
+    color: #ffffff;
+    font-size: 22px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    padding-right: 43px;
+    padding-top: 55px;
+    box-sizing: border-box;
 }
 
 .slider {
@@ -162,17 +294,19 @@ label[for="search"] i {
     transform: scaleY(1.0009);
 }
 
-.nav ul {
+.nav .menu ul, .nav  ul {
     text-align: center;
     box-sizing: border-box;
 }
-
-.nav li {
-    display: inline-block;
-    padding: 0 20px;
+.nav .menu_column ul {
+    width: 80%;
 }
 
-.nav a {
+.nav .menu li, .nav li {
+    display: inline-block;
+}
+
+.nav .menu a, .nav .a {
     display: inline-block;
     height: 51px;
     color: #222222;
@@ -182,6 +316,7 @@ label[for="search"] i {
     text-decoration: none;
     cursor: pointer;
     text-transform: uppercase;
+    padding: 0 20px;
 }
 
 .sale {
@@ -622,27 +757,27 @@ label[for="search"] i {
     float:left;
     margin-left: 50px;
 }
-.menu_column {
+.footer_menu .menu_column {
     width: 221px;
     float: left;
 }
 
-.menu_column li {
+.footer_menu .menu_column li {
     display: block;
 
 }
-.menu_column ul {
+.footer_menu .menu_column ul {
     margin-top: 33px;
 }
 
-.menu_column h4 {
+.footer_menu .menu_column h4 {
     color:  #f16d7f;
     font-size: 18px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 18px;/* Приближение из-за подстановки шрифтов */
     padding-top: 8px;
 }
-.menu_column a {
+.footer_menu .menu_column a {
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
