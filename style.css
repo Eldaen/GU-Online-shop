@@ -446,11 +446,129 @@
     border: none;
     height: 46px;
     line-height: 10px;
+    cursor: pointer;
 
 }
 
 .info {
-    margin-top: 100px;
+    margin: 100px auto 0;
+    width: 1140px;
 }
 
+.brand_info {
+    width: 427px;
+    float: left;
+}
+.brand_logo {
+    height: 51px;
+    line-height: 54px;
+    background: url(images/logo.png) no-repeat;
+    padding-left: 71px;
+    color: #3d3d40;
+    font-size: 27px;
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+}
+.brand_logo span {
+    color:  #f16d7f;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 32px;
+    transform: scaleX(1.003);
+}
+.brand_text {
+    margin-top: 21px;
+    color:  #898989;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.footer_menu {
+    float:left;
+    margin-left: 50px;
+}
+.menu_column {
+    width: 221px;
+    float: left;
+}
+
+.menu_column li {
+    display: block;
+
+}
+.menu_column ul {
+    margin-top: 33px;
+}
+
+.menu_column h4 {
+    color:  #f16d7f;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 18px;/* Приближение из-за подстановки шрифтов */
+    padding-top: 8px;
+}
+.menu_column a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color:  #898989;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 41px;
+}
+
+.main {
+    margin: 89px 0 50px 0;
+    height: 79px;
+    background-color:  #e6e6e6;
+}
+.footer_content{
+    width: 1140px;
+    margin:0 auto;
+}
+.rights {
+    float: left;
+    color:  #7a7a7a;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    padding: 30px 0;
+    text-align: right;
+}
+
+.social_buttons {
+    float:right;
+    margin-top: 24px;
+}
+.social_buttons ul li {
+    display: inline-block;
+    background-color:  #ffffff;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+.social_buttons a {
+    display: inline-block;
+    padding: 7px 0 0 8px;
+    height: 32px;
+    width: 32px;
+    text-decoration: none;
+    color:  #b2b2b2;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.social_buttons ul li:last-child {
+    margin-right: 14px;
+}
+.social_buttons li:hover {
+    background-color:  #f16d7f;
+    color:  #f7f7f8;
+    transition: 0.3s;
+}
+.social_buttons a:hover {
+    color:  #f7f7f8;
+    transition: 0.3s;
+}
 
