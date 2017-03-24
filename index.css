@@ -66,7 +66,7 @@
     border-radius: 5px;
     background-color:  #ffffff;
     width: 262px;
-    padding: 6px 12px 20px 16px;
+    padding: 5px 12px 20px 18px;
     border: 1px solid #e9e9e9;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
 }
@@ -81,7 +81,7 @@
 .header .drop_down_menu h4{
     display: block;
     border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     line-height:32px;
     text-align: left;
 }
@@ -107,7 +107,7 @@
     position: absolute;
     font-size: 16px;
     top: -15px;
-    left: 62px;
+    left: 67px;
     color: #fff;
     text-shadow: 0px -1px 0px #e8e8e8;
     transform: scale(1.5, 1);
@@ -139,7 +139,7 @@ label[for="search"] i {
 }
 .basket {
     position: relative;
-    margin-left: 346px;
+    margin-left: 348px;
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -165,14 +165,14 @@ label[for="search"] i {
     position: absolute;
     display: none;
     z-index: 10;
-    top: 35px;
-    left: -25px;
+    top: 45px;
+    left: -14px;
     padding: 0 17px 21px 17px;
     box-sizing: border-box;
     border-radius: 5px;
     background: #ffffff;
     width: 262px;
-    height: 472px;
+    height: 440px;
 }
 .basket:hover .drop_down{
     display: block;
@@ -180,37 +180,50 @@ label[for="search"] i {
 .basket .drop_down .triangle {
     position: absolute;
     z-index: 10;
-    font-size: 16px;
-    top: -15px;
-    left: 34px;
-    color: #fff;
+    font-size: 11px;
+    top: -14px;
+    left: 26px;
     text-shadow: 0px -1px 0px #e8e8e8;
     transform: scale(1.5, 1);
 }
 .basket .purchase_1, .basket .purchase_2 {
     position: relative;
     height: 85px;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 90px;
-    padding-top: 4px;
+    padding-bottom: 12px;
+    padding-left: 85px;
+    padding-top: 3px;
     border-bottom: 1px solid #e8e8e8;
     color:  #222222;
     font-size: 12px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     text-align: left;
+    background-position-x: -1px;
+    text-transform: uppercase;
 }
 .purchase_1 {
+    margin-top: 20px;
     background: url(images/item_1.png) no-repeat;
+
 }
 .purchase_2 {
+    margin-top: 17px;
     background: url(images/item_2.png) no-repeat;
 }
-.basket .rating i {
-    color:  #e4af48;
-    font-size: 10px;/* Приближение из-за подстановки шрифтов */
+.basket .drop_down .rating i {
+    color: #e4af48;
     font-weight: 400;
-    text-align: right;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 0;
+    margin-top: 6px;
+}
+.basket .drop_down .close {
+    position: absolute;
+    top: 35%;
+    right: -1%;
+    background: url(images/close.png);
+    width: 15px;
+    height: 15px;
 }
 .basket .ammount {
     color:  #f16d7f;
@@ -225,7 +238,8 @@ label[for="search"] i {
     text-align: left;
 }
 .basket .total {
-    margin-top: 20px;
+    margin-top: 18px;
+    text-transform: uppercase;
 }
 .basket .total, .basket .total span {
     color: #222222;
@@ -238,33 +252,38 @@ label[for="search"] i {
     width: 50%;
     float: right;
     text-align: right;
+    margin-right: -2px;
 }
 .basket .checkout {
     margin-top: 30px;
+    margin-left: 1px;
     border-width: 1px;
-    border-color:  #f16d7f;
+    border-color: #f16d7f;
     border-style: solid;
-    width: 223px;
-    height: 48px;
-    color:  #f16d7f;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
-    font-weight: 700;
-    text-align: center;
-    padding-top: 12px;
-    box-sizing: border-box;
-}
-.basket .go_cart {
-    margin-top: 20px;
-    border: 1px solid #eaeaea;
-    box-sizing: border-box;
-    background-color:  #ffffff;
     width: 225px;
     height: 50px;
-    color:  #4a494a;
+    color: #f16d7f;
     font-size: 14px;
     font-weight: 700;
     text-align: center;
     padding-top: 12px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.basket .go_cart {
+    margin-top: 11px;
+    margin-left: 1px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 225px;
+    height: 50px;
+    color: #4a494a;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
+    border: 1px solid #e6e6e6;
+    text-transform: uppercase;
 }
 
 .my_account {
@@ -276,11 +295,11 @@ label[for="search"] i {
     height: 38px;
     margin: 6px 0 0 26px;
     line-height: 35px;
-    text-align: right;
+    text-align: left;
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
-    padding: 1px 13px 7px 2px;
+    padding: 1px 13px 7px 18px;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -315,7 +334,7 @@ label[for="search"] i {
     position: absolute;
     font-size: 16px;
     top: -15px;
-    left: 130px;
+    left: 147px;
     color: #fff;
     text-shadow: 0px -1px 0px #e8e8e8;
     transform: scale(1.5, 1);
@@ -403,9 +422,14 @@ label[for="search"] i {
     transform: scaleY(1.0009);
 }
 
-.nav .menu ul, .nav  ul {
+.nav .menu {
     text-align: left;
     padding-left: 441px;
+    box-sizing: border-box;
+}
+.nav .drop_down  ul {
+    text-align: left;
+    padding-left: 10px;
     box-sizing: border-box;
 }
 .nav .menu_column ul {
@@ -616,14 +640,14 @@ label[for="search"] i {
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
-    line-height: 14px;
-    padding: 18px 19px 18px 24px;
+    line-height: 20px;
+    padding: 13px 11px 16px 25px;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 .all_products i {
-    font-size: 15px; /* Приближение из-за подстановки шрифтов */
+    font-size: 15px;
     font-weight: 400;
     margin-left: 5px;
 
@@ -634,7 +658,7 @@ label[for="search"] i {
 }
 
 .feature_offer {
-    width: 1140px;
+    width: 1139px;
     height: 529px;
     background: url("images/feature_image.png") no-repeat left;
     background-color: #222224;
@@ -644,7 +668,7 @@ label[for="search"] i {
     float: right;
     width: 373px;
     height: 529px;
-    padding: 48px 43px 36px 114px;
+    padding: 48px 43px 36px 112px;
     box-sizing: border-box;
     color: #fbfbfb;
     font-size: 14px;
@@ -655,11 +679,11 @@ label[for="search"] i {
 
 .feature_content div {
     position: relative;
-    margin-top: 60px;
+    margin-top: 54px;
 }
 
 .feature_content div:first-child {
-    margin-top: 0;
+     margin-top: 5px;
 }
 
 .feature_content div:before {
@@ -668,7 +692,7 @@ label[for="search"] i {
     width: 47px;
     display: block;
     position: absolute;
-    left: -74px;
+    left: -76px;
     top: -5px;
 }
 
@@ -694,7 +718,7 @@ label[for="search"] i {
 }
 
 .subscribe {
-    margin-top: 100px;
+    margin-top: 97px;
     background: url(images/sub_bg.png);
     width: 1600px;
     height: 438px;
@@ -717,7 +741,7 @@ label[for="search"] i {
 
 .text_block {
     position: relative;
-    padding: 123px 73px 0 341px;
+    padding: 117px 73px 0 342px;
     box-sizing: border-box;
     color: #000;
     font-size: 16px; /* Приближение из-за подстановки шрифтов */
@@ -742,7 +766,7 @@ label[for="search"] i {
     color: #f16d7f;
     font-size: 16px; /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
-    line-height: 26px; /* Приближение из-за подстановки шрифтов */
+    line-height: 17px;
     text-align: left;
 }
 
@@ -757,6 +781,7 @@ label[for="search"] i {
 
 .switcher {
     margin-top: 39px;
+    margin-left: 2px;
 }
 
 .switcher div {
@@ -773,11 +798,11 @@ label[for="search"] i {
 
 .sub_form .heading {
     float: left;
-    padding: 148px 0 0 148px;
+    padding: 143px 0 0 144px;
     box-sizing: border-box;
-    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-size: 14px;
     font-weight: 400;
-    line-height: 14px; /* Приближение из-за подстановки шрифтов */
+    line-height: 11px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -802,7 +827,7 @@ label[for="search"] i {
     border: none;
     border-radius: 23px 0 0 23px;
     background-color:  #e1e1e1;
-    width: 280px;
+    width: 282px;
     color:  rgba(34, 34, 36, 0.87);
     font-size: 14px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
@@ -816,12 +841,12 @@ label[for="search"] i {
     display: inline-block;
     box-sizing: border-box;
     width: 104px;
-    background-color:  #f16d7f;
+    background-color: #f16d7f;
     padding: 18px 23px 18px 0;
     border-radius: 0 23px 23px 0;
     text-align: right;
-    color:  #ffffff;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    color: #ffffff;
+    font-size: 14px;
     font-weight: 400;
     border: none;
     height: 46px;
@@ -831,8 +856,7 @@ label[for="search"] i {
 }
 
 .info {
-    margin: 100px auto 0;
-    width: 1140px;
+    margin: 109px 0 0 228px;
 }
 
 .brand_info {
@@ -843,7 +867,7 @@ label[for="search"] i {
     height: 51px;
     line-height: 57px;
     background: url(images/logo.png) no-repeat;
-    padding-left: 70px;
+    padding-left: 68px;
     color: #3d3d40;
     font-size: 27px;
     font-weight: 300;
@@ -867,10 +891,10 @@ label[for="search"] i {
 }
 .footer_menu {
     float:left;
-    margin-left: 50px;
+    margin-left: 65px;
 }
 .footer_menu .menu_column {
-    width: 221px;
+    width: 228px;
     float: left;
 }
 
@@ -879,15 +903,16 @@ label[for="search"] i {
 
 }
 .footer_menu .menu_column ul {
-    margin-top: 33px;
+    margin-top: 29px;
 }
 
 .footer_menu .menu_column h4 {
-    color:  #f16d7f;
-    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    color: #f16d7f;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 18px;/* Приближение из-за подстановки шрифтов */
-    padding-top: 8px;
+    line-height: 18px;
+    padding-top: 11px;
+    text-transform: uppercase;
 }
 .footer_menu .menu_column a {
     display: inline-block;
@@ -896,11 +921,11 @@ label[for="search"] i {
     color:  #898989;
     font-size: 16px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
-    line-height: 41px;
+    line-height: 42px;
 }
 
 .main {
-    margin: 89px 0 50px 0;
+    margin: 81px 0 50px 0;
     height: 79px;
     background-color:  #e6e6e6;
 }
@@ -913,20 +938,21 @@ label[for="search"] i {
     color:  #7a7a7a;
     font-size: 16px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
-    padding: 30px 0;
+    padding: 28px 0;
     text-align: right;
 }
 
 .social_buttons {
     float:right;
     margin-top: 24px;
+    margin-right: -14px;
 }
 .social_buttons ul li {
     display: inline-block;
     background-color:  #ffffff;
     width: 32px;
     height: 32px;
-    margin-right: 8px;
+    margin-right: 4.5px;
 }
 .social_buttons a {
     display: inline-block;
