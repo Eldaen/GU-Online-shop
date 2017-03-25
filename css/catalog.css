@@ -111,7 +111,7 @@
     color: #6f6e6e;
 }
 
-.top_filter input[type=checkbox]:first-child {
+.top_filter .first_line input[type=checkbox]:first-child, .top_filter .second_line input[type=checkbox]:first-child  {
     margin-left: 0;
 }
 .top_filter input[type=checkbox]:focus {
@@ -147,6 +147,82 @@
     left: 1.5px;
     color: #99a1a7;
 }
+#slider-range {
+    background-color:  #f0f0f0;
+    width: 262px;
+    height: 6px;
+    margin-bottom: 21px;
+}
+
+/* Контейнер слайдера */
+.ui-slider {
+    position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 14px;   /* Задаем нужную ширину */
+    height: 14px;  /* и высоту */
+    display: block;
+    background: #f16d7f;
+    border-radius: 14px;
+    cursor: pointer
+}
+.ui-slider .ui-slider-handle:focus {
+    outline: none;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+    height: 3px; /* задаем высоту согласно дизайна */
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+    margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content {
+    border: 1px solid #D4D4D4;
+    background: #fff;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header {
+    border: 1px solid #D4D4D4;
+    background: #f16d7f;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+#lowest_price {
+    display: inline-block;
+    width: 50px;
+}
+#highest_price {
+    margin-left: 175px;
+}
+
 
 .catalog_content .sort_filter {
     background-color: #f3f3f3;

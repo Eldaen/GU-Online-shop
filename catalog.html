@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/layout.css?2">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://use.fontawesome.com/9a77aa0bb2.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -448,13 +451,20 @@
                     <h3>size</h3>
                     <div class="filters">
                         <form>
-                            <input type="checkbox" class="regular-checkbox"><span class="size">XXS</span> <input type="checkbox" class="regular-checkbox"><span class="size">XS</span> <input type="checkbox" class="regular-checkbox"><span class="size">S</span> <input type="checkbox" class="regular-checkbox"><span class="size" class="regular-checkbox">M</span><br>
-                            <input type="checkbox" class="regular-checkbox"><span class="size" class="regular-checkbox">L</span> <input type="checkbox" class="regular-checkbox"><span class="size" class="regular-checkbox">XL</span> <input type="checkbox" class="regular-checkbox"><span class="size">XXL</span>
+                            <div class="first_line">
+                                <input type="checkbox" class="regular-checkbox"><span class="size">XXS</span> <input type="checkbox" class="regular-checkbox"><span class="size">XS</span> <input type="checkbox" class="regular-checkbox"><span class="size">S</span> <input type="checkbox" class="regular-checkbox"><span class="size" class="regular-checkbox">M</span><br>
+                            </div>
+                            <div class="second_line">
+                                <input type="checkbox" class="regular-checkbox"><span class="size" class="regular-checkbox">L</span> <input type="checkbox" class="regular-checkbox"><span class="size" class="regular-checkbox">XL</span> <input type="checkbox" class="regular-checkbox"><span class="size">XXL</span>
+                            </div>
                         </form>
                     </div>
                 </div>
                 <div class="filter_column">
                     <h3>price</h3>
+                    <div id="slider-range"></div>
+                    <span id="lowest_price">$52</span>
+                    <span id="highest_price">$400</span>
                 </div>
             </div>
             <div class="clr"></div>
@@ -684,6 +694,6 @@
     </footer>
 </div>
 
-
+<script src="scripts/range.js"></script>
 </body>
 </html>
