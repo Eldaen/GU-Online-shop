@@ -58,6 +58,7 @@
     height: 0;
 }
 .side_bar label {
+    position: relative;
     display: inline-block;
     color: #ef5b70;
     font-size: 14px;
@@ -77,12 +78,19 @@
 input[type=radio]:checked + label > ul {
     display: block;
 }
+input[type=radio]:checked + label > i {
+    color: #ef5b70;
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
 .side_bar label:first-child {
     margin-top: 0;
 }
 .side_bar label i {
-    margin-left: 139px;
-    color: #ef5b70;
+    position: absolute;
+    left: 93%;
+    top: 22%;
+    color:  #6f6e6e;
     font-size: 14.99px;
     font-weight: 400;
     line-height: 20px;
@@ -90,6 +98,7 @@ input[type=radio]:checked + label > ul {
 }
 .side_bar ul {
     display:none;
+    height: 0;
     margin-top: 20px;
 }
 .side_bar li {
