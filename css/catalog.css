@@ -23,11 +23,14 @@
     text-align: right;
     padding: 69px 230px 68px 0;
     box-sizing: border-box;
-    color:  #636363;
     font-size: 14px;/* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 20px;/* Приближение из-за подстановки шрифтов */
     text-transform: uppercase;
+}
+.bread_crumps a {
+    color:  #636363;
+    text-decoration: none;
 }
 .bread_crumps span {
     color:  #f16d7f;
@@ -254,4 +257,37 @@
 }
 .pagination_holder .show_all:focus {
     outline: none;
+}
+
+.features {
+    margin-top: 110px;
+    background-color:  #222224;
+    width: 1600px;
+    height: 341px;
+    letter-spacing: 0.5px;
+}
+.features .feature:first-child{
+    margin-left: 254px;
+}
+.features .feature {
+    margin-top: 89px;
+    width: 309px;;
+    float: left;
+    margin-right: 81px;
+    color:  #fbfbfb;
+    font-size: 13.97px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleX(1.0017);
+}
+.features .feature h2 {
+    color:  #fbfbfb;
+    font-size: 19.96px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    transform: scaleX(1.0017);
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    line-height: 44px;
 }
