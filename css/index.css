@@ -157,6 +157,7 @@
     width: 261px;
     height: 364px;
     margin-right: 32px;
+    cursor: pointer;
 }
 
 .row > div .image {
