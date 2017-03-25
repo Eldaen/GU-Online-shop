@@ -1,0 +1,180 @@
+.catalog_header {
+    background-color: #f8f3f4;
+    width: 1600px;
+    height: 148px;
+    margin: 0 auto;
+}
+.section_name {
+    width: 50%;
+    float:left;
+}
+.catalog_header h1 {
+    padding: 65px 0 65px 228px;
+    color:  #f16d7f;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    line-height: 20px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+}
+.bread_crumps {
+    float:left;
+    width: 50%;
+    text-align: right;
+    padding: 69px 230px 68px 0;
+    box-sizing: border-box;
+    color:  #636363;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 20px;/* Приближение из-за подстановки шрифтов */
+    text-transform: uppercase;
+}
+.bread_crumps span {
+    color:  #f16d7f;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 20px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.side_bar {
+    margin-top: 50px;
+    margin-left: 230px;
+    float:left;
+    width: 243px;
+    height: 598px;
+    outline: 1px solid #f16d7f;
+}
+.catalog_content {
+    margin-top: 60px;
+    margin-left: 48px;
+    float: left;
+    height: 598px;
+    outline: 1px solid #f16d7f;
+}
+.top_filter{
+    height: 115px;
+}
+
+.top_filter .filter_column {
+    height: 119px;
+    width: 270px;
+    margin-right: 20px;
+    float: left;
+}
+.top_filter .filter_column:last-child {
+    margin-right: 0;
+}
+.catalog_content .sort_filter {
+    background-color:  #f3f3f3;
+    height: 50px;
+    padding: 9px 10px;
+    box-sizing: border-box;
+}
+.catalog_content .product {
+    width: 848px;
+    height: 1164px;
+}
+
+.product .items {
+    margin-top: 60px;
+}
+
+.product .items img {
+    display: block;
+    width: 261px;
+    height: 282px;
+}
+
+.product .row {
+    margin-top: 39px;
+    float: left;
+}
+
+.product .row:first-child {
+    margin-top: 45px;
+}
+
+.product .row > div:hover {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+
+}
+
+.product .row > div {
+    float: left;
+    width: 261px;
+    height: 364px;
+    margin-right: 32px;
+}
+
+.row > div .image {
+    position: absolute;
+    top: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.59);
+    width: 261px;
+    height: 279px;
+}
+.row > div img {
+    width: 261px;
+    height: 282px;
+}
+.row > div {
+    position: relative;
+}
+
+.row > div:hover .image {
+    display: block;
+}
+.row > div:hover .card {
+    display: block;
+}
+
+
+.row > div .card {
+    position: absolute;
+    display: none;
+    top: 98px;
+    left: 71px;
+    width: 121px;
+    box-sizing: border-box;
+    outline: 1px solid #ffffff;
+    padding: 10px 8px 12px 42px;
+    background-image: url(../images/basket.png);
+    background-repeat: no-repeat;
+    background-position-x: 11px;
+    background-position-y: 8px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.product .row div:last-child {
+    margin-right: 0;
+}
+
+.product .row .name {
+    display: block;
+    color: #222222;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.product .row .price {
+    display: block;
+    margin-top: 15px;
+    color: #f16d7f;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.product .row .price_block {
+    padding: 15px 15px 19px 15px;
+    box-sizing: border-box;
+}
