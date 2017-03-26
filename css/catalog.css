@@ -420,16 +420,17 @@ select:focus {
     width: 261px;
     height: 364px;
     margin-right: 32px;
-    cursor: pointer;
 }
 
 .row > div .image {
     position: absolute;
     top: 0;
-    display: block;
+    display: none;
     background-color: rgba(0, 0, 0, 0.59);
     width: 261px;
     height: 282px;
+    padding: 98px 68px 0 71px;
+    box-sizing: border-box;
 }
 
 .row > div img {
@@ -450,7 +451,6 @@ select:focus {
 }
 
 .row > div .card {
-    position: absolute;
     display: block;
     top: 98px;
     left: 71px;
@@ -467,10 +467,11 @@ select:focus {
     font-size: 13px;
     font-weight: 700;
     text-align: left;
+    margin-bottom: 7px;
+    cursor: pointer;
 }
 .row > div .repeat {
-    position: absolute;
-    display: block;
+    display: inline-block;
     width: 56px;
     height: 35px;
     top: 146px;
@@ -482,10 +483,11 @@ select:focus {
     border-radius: 4px;
     border: 1px solid #ffffff;
     box-sizing: border-box;
+    vertical-align: top;
+    cursor: pointer;
 }
 .row > div .favorite {
-    position: absolute;
-    display: block;
+    display: inline-block;
     width: 56px;
     height:35px;
     top: 146px;
@@ -497,6 +499,9 @@ select:focus {
     font-size: 13px;
     font-weight: 700;
     text-align: left;
+    vertical-align: top;
+    margin-left: 5px;
+    cursor: pointer;
 }
 .favorite i {
     color: #ffffff;
