@@ -294,6 +294,94 @@ input[type=radio]:checked + label > i {
     padding: 9px 10px;
     box-sizing: border-box;
 }
+.sort-filter_by-name {
+    float: left;
+
+    position: relative;
+    padding-left: 13px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #ebebeb;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    width: 153px;
+    height: 30px;
+    color:  #6f6e6e;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.sort-filter_quantity {
+    position: relative;
+    padding-left: 13px;
+    margin-left: 10px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ebebeb;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 119px;
+    height: 30px;
+    color:  #6f6e6e;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+#sort_by {
+    display: inline-block;
+    height: 28px;
+    margin-left: 16px;
+    border: none;
+    border-left: 1px solid #ebebeb;
+    padding-left: 11px;
+    color:  #6f6e6e;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    padding-right: 24px;
+}
+#show {
+    display: inline-block;
+    height: 28px;
+    border: none;
+    margin-left: 5px;
+    border-left: 1px solid #ebebeb;
+    padding-left: 15px;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    padding-right: 28px;
+}
+.sort-filter_by-name-i, .sort-filter_quantity-i {
+    color: #6f6e6e;
+    top: 26%;
+    position: absolute;
+    font-size: 14.99px;
+    margin-left: 5px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+.sort-filter_by-name-i {
+    left: 87%;
+}
+.sort-filter_quantity-i {
+    left: 80%;
+}
+select {
+    -moz-appearance: none;
+    -webkit-appearance:none;
+}
+select:focus {
+    outline: none;
+}
 
 .catalog_content .product {
     width: 848px;
