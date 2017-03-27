@@ -10,7 +10,7 @@
     margin: 0 auto;
     padding-top: 224px;
 }
-.slider .text {
+.promo-text {
     color: #222222;
     font-size: 40px;
     font-weight: 900;
@@ -20,14 +20,14 @@
     padding-left: 12px;
     line-height: 32px;
 }
-.slider .text h4 {
+.promo-text_header{
     color: #222222;
     font-size: 60px;
     font-weight: 900;
     line-height: 41px;
     margin-bottom: 19px;
 }
-.slider .text span {
+.promo-text_span {
     color:  #f16d7f;
     font-size: 40px;/* Приближение из-за подстановки шрифтов */
     font-weight: 900;
@@ -47,13 +47,18 @@
     text-decoration: none;
 }
 
-.sale > div {
-    float: left;
+.sale_block {
     width: 560px;
     margin-right: 21px;
+    text-decoration: none;
+    display: block;
+    color: #f16d7f;
+    background-color: #dadad2;
+
+    margin-bottom: 20px;
 }
 
-.sale div a div {
+.sale_item {
     margin-top: 26px;
     max-width: 225px;
     height: 82px;
@@ -70,33 +75,23 @@
     text-align: left;
 }
 
-.men {
+.sale_men {
     background-image: url(../images/men.png);
     height: 542px;
 }
 
-.accs {
+.sale_accs {
     background: url(../images/accs.png) no-repeat right;
     height: 261px;
 }
-.sale a{
-    text-decoration: none;
-    display: block;
-    color: #f16d7f;
-    background-color: #dadad2;
-}
 
-.left > a, .right > a {
-    margin-bottom: 20px;
-}
-
-.women {
+.sale_women {
 
     background-image: url(../images/women.png);
     height: 261px;
 }
 
-.kids {
+.sale_kids {
     background-image: url(../images/kid.png);
     height: 542px;
 }
@@ -105,9 +100,10 @@
     clear: both;
     width: 1140px;
     margin: 0 auto;
+    text-align: center;
 }
 
-.section_h2 {
+.featured_h2 {
     margin: 0;
     padding: 0;
     color: #222222;
@@ -118,7 +114,7 @@
     margin-left: 472px;
 }
 
-.heading p {
+.featured_p {
     margin-top: 14px;
     color: #9f9f9f;
     font-size: 14px;
@@ -138,21 +134,25 @@
     height: 279px;
 }
 
-.featured .row {
+.row {
     margin-top: 39px;
     float: left;
 }
 
-.featured .row:first-child {
+.row:first-child {
     margin-top: 0;
 }
 
-.featured .row > div:hover {
+.row_item:hover {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 
 }
+.row_price-block {
+    padding: 19px 15px;
+    box-sizing: border-box;
+}
 
-.featured .row > div {
+.row_item {
     float: left;
     width: 261px;
     height: 364px;
@@ -160,7 +160,7 @@
     cursor: pointer;
 }
 
-.row > div .image {
+.row > div .row_image {
     position: absolute;
     top: 0;
     display: none;
@@ -172,15 +172,15 @@
     position: relative;
 }
 
-.row > div:hover .image {
+.row > div:hover .row_image {
     display: block;
 }
-.row > div:hover .card {
+.row > div:hover .row_card {
     display: block;
 }
 
 
-.row > div .card {
+.row > div .row_card {
     position: absolute;
     display: none;
     top: 98px;
@@ -203,7 +203,7 @@
     margin-right: 0;
 }
 
-.featured .name {
+.featured .reviews_name {
     display: block;
     color: #222222;
     font-size: 13px;
@@ -213,7 +213,7 @@
     text-transform: uppercase;
 }
 
-.featured .price {
+.row_price {
     display: block;
     margin-top: 15px;
     color: #f16d7f;
@@ -222,13 +222,17 @@
     font-weight: 700;
     text-align: left;
 }
+.row_name {
+    text-align: left;
+    display: block;
+}
 
-.featured .price_block {
+.row_card {
     padding: 19px 15px;
     box-sizing: border-box;
 }
 
-.all_products {
+.feature_all-products {
     display: block;
     background-color: #f16d7f;
     width: 212px;
@@ -243,7 +247,7 @@
     text-decoration: none;
 }
 
-.all_products i {
+.all-products_i {
     font-size: 15px;
     font-weight: 400;
     margin-left: 5px;
@@ -252,14 +256,14 @@
 
 
 
-.feature_offer {
+.offer {
     width: 1139px;
     height: 529px;
     background: url("../images/feature_image.png") no-repeat left;
     background-color: #222224;
 }
 
-.feature_content {
+.offer_content {
     float: right;
     width: 373px;
     height: 529px;
@@ -272,16 +276,16 @@
     text-align: left;
 }
 
-.feature_content div {
+.offer_item {
     position: relative;
     margin-top: 54px;
 }
 
-.feature_content div:first-child {
+.offer_item:first-child {
      margin-top: 5px;
 }
 
-.feature_content div:before {
+.offer_item:before {
     content: "";
     height: 40px;
     width: 47px;
@@ -291,7 +295,7 @@
     top: -5px;
 }
 
-.feature_content h3 {
+.offer_content h3 {
     color: #fbfbfb;
     font-size: 20px;
 / font-weight: 700;
@@ -300,15 +304,15 @@
     line-height: 18px;
 }
 
-.feature_content .delivery:before {
+.offer_content .delivery:before {
     background: url("../images/delivery.png") no-repeat;
 }
 
-.feature_content .discount:before {
+.offer_content .discount:before {
     background: url("../images/discount.png") no-repeat;
 }
 
-.feature_content .quality:before {
+.offer_content .quality:before {
     background: url("../images/quality.png") no-repeat;
 }
 

@@ -36,6 +36,10 @@
     color: #636363;
     text-decoration: none;
 }
+.bread_crumps a:hover {
+    color: #f16d7f;
+}
+
 
 .bread_crumps span {
     color: #f16d7f;
@@ -147,6 +151,9 @@ input[type=radio]:checked + label > i {
     text-decoration: none;
     color: #6f6e6e;
 }
+.top_filter .filter_column a:hover {
+    color: #f16d7f;
+}
 
 .top_filter .filter_column:last-child {
     margin-right: 0;
@@ -172,6 +179,7 @@ input[type=radio]:checked + label > i {
 .top_filter input[type=checkbox] {
     margin-left: 14px;
     color: #6f6e6e;
+    cursor: pointer;
 }
 
 .top_filter .first_line input[type=checkbox]:first-child, .top_filter .second_line input[type=checkbox]:first-child  {
@@ -422,7 +430,7 @@ select:focus {
     margin-right: 32px;
 }
 
-.row > div .image {
+.row > div .row_image {
     position: absolute;
     top: 0;
     display: none;
@@ -442,15 +450,15 @@ select:focus {
     position: relative;
 }
 
-.row > div:hover .image {
+.row > div:hover .row_image {
     display: block;
 }
 
-.row > div:hover .card {
+.row > div:hover .row_card {
     display: block;
 }
 
-.row > div .card {
+.row > div .row_card {
     display: block;
     top: 98px;
     left: 71px;
@@ -514,18 +522,11 @@ select:focus {
 .product .row div:last-child {
     margin-right: 0;
 }
-
-.product .row .name {
-    display: block;
-    color: #222222;
-    font-size: 13px;
-    line-height: 13px;
-    font-weight: 400;
-    text-align: left;
-    text-transform: uppercase;
+.row_price-block {
+    padding: 19px 15px;
+    box-sizing: border-box;
 }
-
-.product .row .price {
+.row_price {
     display: block;
     margin-top: 15px;
     color: #f16d7f;
@@ -535,7 +536,27 @@ select:focus {
     text-align: left;
 }
 
-.product .row .price_block {
+.product .row .reviews_name {
+    display: block;
+    color: #222222;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.product .row .basket_price {
+    display: block;
+    margin-top: 15px;
+    color: #f16d7f;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.product .row .row_price-block {
     padding: 15px 15px 19px 15px;
     box-sizing: border-box;
 }
@@ -568,6 +589,9 @@ select:focus {
     text-align: left;
     text-decoration: none;
 }
+.pagination a:hover {
+    color: #f16d7f;
+}
 
 .pagination a:first-child {
     margin-right: 13px;
@@ -597,7 +621,7 @@ select:focus {
     margin-right: 12px;
 }
 
-.pagination .active {
+.pagination .reviews_switcher-active {
     color: #ef5b70;
 }
 
@@ -623,6 +647,11 @@ select:focus {
 
 .pagination_holder .show_all:focus {
     outline: none;
+}
+
+.pagination_holder .show_all:hover {
+    color: #4e4e4e;
+    border-color: #4e4e4e;;
 }
 
 .features {
