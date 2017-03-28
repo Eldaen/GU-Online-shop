@@ -120,6 +120,9 @@
     text-decoration: none;
     color:  #6f6e6e;
 }
+.side-bar_link:hover {
+    color: #f16d7f;
+}
 
 .catalog_content {
     margin-top: 60px;
