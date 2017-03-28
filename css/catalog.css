@@ -112,6 +112,7 @@
     line-height: 33px;
     text-align: left;
     padding-left: 1px;
+    text-decoration: none;
 }
 .side-bar_link {
     display: block;
@@ -216,7 +217,7 @@
     left: 1.5px;
     color: #99a1a7;
 }
-#slider-range {
+.range_slider {
     background-color:  #f0f0f0;
     width: 262px;
     height: 6px;
@@ -285,22 +286,22 @@
     -webkit-border-radius: 4px;
     border-radius: 4px;
 }
-#lowest_price {
+.range_lowest-price {
     display: inline-block;
     width: 50px;
 }
-#highest_price {
+.range_highest-price {
     margin-left: 175px;
 }
 
 
-.catalog_content .sort_filter {
+.catalog_content .sort {
     background-color: #f3f3f3;
     height: 50px;
     padding: 9px 10px;
     box-sizing: border-box;
 }
-.sort-filter_by-name {
+.sort_by-name {
     float: left;
 
     position: relative;
@@ -319,7 +320,7 @@
     text-align: left;
 }
 
-.sort-filter_quantity {
+.sort_quantity {
     position: relative;
     padding-left: 13px;
     margin-left: 10px;
@@ -337,7 +338,7 @@
     line-height: 26px;/* Приближение из-за подстановки шрифтов */
     text-align: left;
 }
-#sort_by {
+.sort_by {
     display: inline-block;
     height: 28px;
     margin-left: 16px;
@@ -351,7 +352,7 @@
     text-align: left;
     padding-right: 24px;
 }
-#show {
+.sort_show {
     display: inline-block;
     height: 28px;
     border: none;
@@ -365,7 +366,7 @@
     text-align: left;
     padding-right: 28px;
 }
-.sort-filter_by-name-i, .sort-filter_quantity-i {
+.sort_by-name-i, .sort_quantity-i {
     color: #6f6e6e;
     top: 26%;
     position: absolute;
@@ -375,17 +376,17 @@
     line-height: 20px;
     text-align: left;
 }
-.sort-filter_by-name-i {
+.sort_by-name-i {
     left: 87%;
 }
-.sort-filter_quantity-i {
+.sort_quantity-i {
     left: 80%;
 }
-select {
+.sort_select  {
     -moz-appearance: none;
     -webkit-appearance:none;
 }
-select:focus {
+.sort_select:focus {
     outline: none;
 }
 
@@ -393,42 +394,32 @@ select:focus {
     width: 848px;
 }
 
-.product .items {
-    margin-top: 60px;
-}
-
-.product .items img {
-    display: block;
-    width: 261px;
-    height: 282px;
-}
-
 .product .row {
     margin-top: 38px;
     float: left;
 }
 
-.product .row:first-child {
+.row-first {
     margin-top: 45px;
 }
 
-.product .row:last-child {
+.row-last {
     margin-top: 35px;
 }
 
-.product .row > div:hover {
+.row_item:hover {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 
 }
 
-.product .row > div {
+.row_item {
     float: left;
     width: 261px;
     height: 364px;
     margin-right: 32px;
 }
 
-.row > div .row_image {
+.row_image-hover {
     position: absolute;
     top: 0;
     display: none;
@@ -438,25 +429,24 @@ select:focus {
     padding: 98px 68px 0 71px;
     box-sizing: border-box;
 }
+.row_item:hover .row_image-hover {
+    display: block;
+}
 
-.row > div img {
+.row_image {
     width: 261px;
     height: 282px;
 }
 
-.row > div {
+.row_item {
     position: relative;
 }
 
-.row > div:hover .row_image {
+.row_card {
     display: block;
 }
 
-.row > div:hover .row_card {
-    display: block;
-}
-
-.row > div .row_card {
+.row_card {
     display: block;
     top: 98px;
     left: 71px;
@@ -476,7 +466,7 @@ select:focus {
     margin-bottom: 7px;
     cursor: pointer;
 }
-.row > div .repeat {
+.row_repeat {
     display: inline-block;
     width: 56px;
     height: 35px;
@@ -492,7 +482,7 @@ select:focus {
     vertical-align: top;
     cursor: pointer;
 }
-.row > div .favorite {
+.row_favorite {
     display: inline-block;
     width: 56px;
     height:35px;
@@ -509,7 +499,7 @@ select:focus {
     margin-left: 5px;
     cursor: pointer;
 }
-.favorite i {
+.row_favorite-i {
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
@@ -517,7 +507,7 @@ select:focus {
     padding: 9px 8px 12px 20px;
 }
 
-.product .row div:last-child {
+.row-item-last {
     margin-right: 0;
 }
 .row_price-block {
@@ -559,12 +549,12 @@ select:focus {
     box-sizing: border-box;
 }
 
-.pagination_holder {
+.pagination-holder {
     float: left;
     margin-top: 40px;
 }
 
-.pagination {
+.pag {
     float: left;
     padding: 10px 12px;
     border-radius: 3px;
@@ -576,8 +566,11 @@ select:focus {
     width: 261px;
     height: 44px;
 }
+.pag_pages {
+    display: inline-block;
+}
 
-.pagination a {
+.pag_link {
     display: inline-block;
     margin-right: 16px;
     color: #aaaaaa;
@@ -587,19 +580,19 @@ select:focus {
     text-align: left;
     text-decoration: none;
 }
-.pagination a:hover {
+.pag_link:hover {
     color: #f16d7f;
 }
 
-.pagination a:first-child {
-    margin-right: 13px;
+.pag-first-link {
+    margin-right: 9px;
 }
 
-.pagination a:last-child {
+.pag-last-link {
     margin-right: 0;
 }
 
-.pagination a span {
+.pag_active {
     color: #ef5b70;
     font-size: 17px; /* Приближение из-за подстановки шрифтов */
     font-weight: 600;
@@ -607,23 +600,21 @@ select:focus {
     padding-bottom: 1px;
 }
 
-.pages, .last_page {
-    display: inline-block;
-}
 
-.pages a:last-child {
+.pag_last-link {
     margin-right: 0;
 }
 
-.last_page {
-    margin-right: 12px;
+.pag_last-page {
+    display: inline-block;
+    margin-right: 9px;
 }
 
-.pagination .reviews_switcher-active {
+.reviews_switcher-active {
     color: #ef5b70;
 }
 
-.pagination_holder .show_all {
+.pag_show-all {
     display: block;
     float: right;
     margin-left: 436px;
@@ -643,11 +634,11 @@ select:focus {
     cursor: pointer;
 }
 
-.pagination_holder .show_all:focus {
+.pag_show-all:focus {
     outline: none;
 }
 
-.pagination_holder .show_all:hover {
+.pag_show-all:hover {
     color: #4e4e4e;
     border-color: #4e4e4e;;
 }
@@ -660,11 +651,11 @@ select:focus {
     letter-spacing: 0.5px;
 }
 
-.features .feature:first-child {
+.feature-first{
     margin-left: 254px;
 }
 
-.features .feature {
+.feature {
     margin-top: 89px;
     width: 309px;;
     float: left;
@@ -677,7 +668,7 @@ select:focus {
     transform: scaleX(1.0017);
 }
 
-.features .feature h2 {
+.feature_header {
     color: #fbfbfb;
     font-size: 19.96px; /* Приближение из-за подстановки шрифтов */
     font-weight: 700;

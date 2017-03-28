@@ -160,7 +160,7 @@
     cursor: pointer;
 }
 
-.row > div .row_image {
+.row > div .row_image-hover {
     position: absolute;
     top: 0;
     display: none;
@@ -172,7 +172,7 @@
     position: relative;
 }
 
-.row > div:hover .row_image {
+.row > div:hover .row_image-hover {
     display: block;
 }
 .row > div:hover .row_card {
