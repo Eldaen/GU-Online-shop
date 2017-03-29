@@ -304,10 +304,12 @@
     padding: 9px 10px;
     box-sizing: border-box;
 }
+.sort_select {
+    position: relative;
+    z-index: 2;
+}
 .sort_by-name {
     float: left;
-
-    position: relative;
     padding-left: 13px;
     border-style: solid;
     border-width: 1px;
@@ -371,6 +373,7 @@
 }
 .sort_by-name-i, .sort_quantity-i {
     color: #6f6e6e;
+    z-index: 0;
     top: 26%;
     position: absolute;
     font-size: 14.99px;
@@ -386,6 +389,7 @@
     left: 80%;
 }
 .sort_select  {
+    background: transparent;
     -moz-appearance: none;
     -webkit-appearance:none;
 }
@@ -616,32 +620,37 @@
 .reviews_switcher-active {
     color: #ef5b70;
 }
-
-.pag_show-all {
+.button {
     display: block;
-    float: right;
-    margin-left: 436px;
     border-radius: 3px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ef5b70;
+    border: 1px solid #ef5b70;
     box-sizing: border-box;
     background-color: #ffffff;
-    width: 150px;
-    height: 44px;
     color: #ef5b70;
-    font-size: 16px; /* Приближение из-за подстановки шрифтов */
-    font-weight: 400;
-    line-height: 26px; /* Приближение из-за подстановки шрифтов */
     text-align: center;
     cursor: pointer;
 }
 
-.pag_show-all:focus {
+.pag_show-all {
+
+    float: right;
+    margin-left: 436px;
+
+
+    width: 150px;
+    height: 44px;
+
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 26px; /* Приближение из-за подстановки шрифтов */
+
+}
+
+.button:focus {
     outline: none;
 }
 
-.pag_show-all:hover {
+.button:hover {
     color: #4e4e4e;
     border-color: #4e4e4e;;
 }
