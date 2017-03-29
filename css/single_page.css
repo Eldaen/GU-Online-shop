@@ -36,6 +36,9 @@
     color: #636363;
     text-decoration: none;
 }
+.bread-crumps_link-current {
+    display: inline-block;
+}
 .bread-crumps_link:hover {
     color: #f16d7f;
 }

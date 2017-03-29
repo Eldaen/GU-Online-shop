@@ -421,6 +421,10 @@
     padding-left: 4px;
 }
 
+.menu__item_current {
+    border-bottom: 3px solid #f16d7f;
+}
+
 .menu-list_link:hover {
     font-weight: 600;
     color: #f16d7f;
