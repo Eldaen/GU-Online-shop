@@ -376,7 +376,7 @@
     cursor: pointer;
 }
 
-.row > div .row_image-hover {
+.row > div .row_image {
     position: absolute;
     top: 0;
     display: none;
@@ -388,7 +388,7 @@
     position: relative;
 }
 
-.row > div:hover .row_image-hover {
+.row > div:hover .row_image {
     display: block;
 }
 .row > div:hover .row_card {
