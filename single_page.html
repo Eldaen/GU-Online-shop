@@ -2,14 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Catalog</title>
-    <link rel="stylesheet" href="css/catalog.css?3">
+    <title>Single Page</title>
+    <link rel="stylesheet" href="css/single_page.css?3">
     <link rel="stylesheet" href="css/layout.css?2">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://use.fontawesome.com/9a77aa0bb2.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -402,249 +398,26 @@
         </div>
     </header>
 
-    <main class="catalog">
-        <nav class="side-bar">
-            <form action="">
-                <input class="side-bar_button" name="menu" type="radio"  id="first_section" checked>
-                <label class="side-bar_label" for="first_section">CATEGORY<i class="fa fa-caret-up side-bar_i" aria-hidden="true"></i>
-                    <ul class="side-bar_list">
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                    </ul>
-                </label>
-                <input class="side-bar_button" name="menu" type="radio"  id="second_section">
-                <label class="side-bar_label" for="second_section">CATEGORY<i class="fa fa-caret-up side-bar_i" aria-hidden="true"></i>
-                    <ul class="side-bar_list">
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                    </ul>
-                </label>
-                <input class="side-bar_button" name="menu" type="radio"  id="third_section">
-                <label class="side-bar_label" for="third_section">CATEGORY<i class="fa fa-caret-up side-bar_i" aria-hidden="true"></i>
-                    <ul class="side-bar_list">
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                    </ul>
-                </label>
-            </form>
-
-        </nav>
-        <section class="catalog_content">
-            <section class="filter">
-                <div class="filter-column">
-                    <h3 class="filter-column_header">Trending now</h3>
-                    <div class="filters type">
-                        <a class="type_link" href="#">Bohemian</a> <span class="type_span">|</span> <a class="type_link" href="#">Floral</a> <span class="type_span">|</span> <a
-                            class="type_link" href="#">Lace</a><br>
-                        <a class="type_link" href="#">Floral</a> <span class="type_span">|</span> <a class="type_link" href="#">Lace</a> <span class="type_span">|</span> <a
-                            class="type_link" href="#">Bohemian</a>
-                    </div>
-                </div>
-                <div class="filter-column">
-                    <h3 class="filter-column_header">size</h3>
-                    <div class="filters size">
-                        <form>
-                            <div class="filters_first-line">
-                                <input type="checkbox" class="size_checkbox size-first"><span class="size_span">XXS</span> <input type="checkbox" class="size_checkbox"><span class="size_span">XS</span> <input type="checkbox" class="size_checkbox"><span class="size_span">S</span> <input type="checkbox" class="size_checkbox"><span class="size_span" class="size_checkbox">M</span><br>
-                            </div>
-                            <div class="filters_second-line">
-                                <input type="checkbox" class="size_checkbox size-first"><span class="size_span" class="size_checkbox">L</span> <input type="checkbox" class="size_checkbox"><span class="size_span" class="size_checkbox">XL</span> <input type="checkbox" class="size_checkbox"><span class="size_span">XXL</span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="filter-column range">
-                    <h3 class="filter-column_header">price</h3>
-                    <div class="range_slider" id="slider-range"></div>
-                    <span class="range_lowest-price" id="lowest_price">$52</span>
-                    <span class="range_highest-price" id="highest_price">$400</span>
-                </div>
-            </section>
-            <div class="clr"></div>
-            <section class="sort">
-                <div class="sort_by-name">Sort By
-                    <select class="sort_select sort_by" name="sort_by" id="sort_by">
-                        <option value="name">Name</option>
-                        <option value="price">Price</option>
-                        <option value="color">Color</option>
-                        <option value="brand">Brand</option>
-                    </select>
-                    <i class="fa fa-caret-down sort_by-name-i" aria-hidden="true"></i>
-                </div>
-                <div class="sort_quantity">Show
-                    <select class="sort_select sort_show" name="show" id="show">
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="30">30</option>
-                        <option value="40">40</option>
-                    </select>
-                    <i class="fa fa-caret-down sort_quantity-i" aria-hidden="true"></i></div>
-            </section>
-            <section class="product">
-                <div class="row row-first">
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item row-item-last">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item row-item-last">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-last">
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item row-item-last">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <div class="row_card">Add to Cart</div>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <section class="pagination-holder">
-                    <div class="pag">
-                        <a class="pag_link pag-first-link" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                        <div class="pag_pages">
-                            <a class="pag_link" href="#"><span class="pag_active">1</span></a>
-                            <a class="pag_link" href="#">2</a>
-                            <a class="pag_link" href="#">3</a>
-                            <a class="pag_link" href="#">4</a>
-                            <a class="pag_link" href="#">5</a>
-                            <a class="pag_link pag-last-link" href="#">6</a>
-                        </div>
-                        ....
-                        <div class="pag_last-page">
-                            <a class="pag_link pag-last-link" href="#">20</a>
-                        </div>
-                        <a class="pag_link pag-last-link" href="#"><i class="fa fa-chevron-right pag_active" aria-hidden="true"></i></a>
-                    </div>
-                    <button class="pag_show-all">View All</button>
-                </section>
-            </section>
+    <main>
+        <section class="slider">
+            <img src="images/slider_woman.png" class="slider__image">
+            <div class="slider__switch slider__switch_left"><i class="fa fa-angle-left slider__i" aria-hidden="true"></i></div>
+            <div class="slider__switch slider__switch_right"><i class="fa fa-angle-right slider__i" aria-hidden="true"></i></div>
         </section>
-        <div class="clr"></div>
-        <section class="features">
-            <div class="feature feature-first">
-                <img class="feature_image" src="images/delivery.png" alt=""><br>
-                <h2 class="feature_header">Free Delivery</h2>
-                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+        <section class="item-card item-card_single-page">
+            <div class="small-heading small-heading__item-card">
+                Women collection
+                <div class="small-heading__border"></div>
             </div>
-            <div class="feature">
-                <img class="feature_image" src="images/discount.png" alt=""><br>
-                <h2 class="feature_header">Sales & Discoun</h2>
-                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-            </div>
-            <div class="feature">
-                <img class="feature_image" src="images/quality.png" alt=""><br>
-                <h2 class="feature_header">Quality Assurance</h2>
-                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-            </div>
+            <article class="item-card_article">
+                <h1 class="item-card__header">Moschino Cheap And Chic</h1>
+                Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+                <br>
+                <div class="item-card__desc item-card__desc_first"><span class="item-card__span">material:</span>cotton</div>
+                <div class="item-card__desc"><span class="item-card__span">designer:</span>binburham</div>
+                <div class="item-card__price">$561</div>
+            </article>
+
         </section>
     </main>
 
@@ -733,7 +506,5 @@
         </div>
     </footer>
 </div>
-
-<script src="scripts/range.js"></script>
 </body>
 </html>
