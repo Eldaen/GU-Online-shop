@@ -414,20 +414,31 @@
                 <h1 class="item-card__header">Moschino Cheap And Chic</h1>
                 Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
                 <br>
-                <div class="item-card__desc item-card__desc_first"><span class="item-card__span">material:</span>cotton</div>
-                <div class="item-card__desc"><span class="item-card__span">designer:</span>binburham</div>
+                <div class="item-card__desc item-card__desc_first"><span class="item-card__span">material: </span>cotton</div>
+                <div class="item-card__desc"><span class="item-card__span">designer: </span>binburham</div>
                 <div class="item-card__price">$561</div>
             </article>
             <section class="filter filter_single-page">
                 <div class="filter-column">
                     <h3 class="filter-column_header">Choose color</h3>
                     <div class="sort sort_color">
-                        <i class="fa fa-caret-down sort__i" aria-hidden="true"></i>
-                        <select class="sort__select">
+                        <div class="sort__select sort__select_color">
+                            <i class="sort__i sort__i_color fa fa-caret-down " aria-hidden="true"></i>
+                            <button class="sort__title">Select Color</button>
+                            <ul class="sort__ul">
+                                <li class="sort__li sort__li_first" data-value="red"><span class="sort__select_span"></span>red</li>
+                                <li class="sort__li" data-value="green"><span class="sort__select_span"></span>green</li>
+                                <li class="sort__li" data-value="blue"><span class="sort__select_span"></span>blue</li>
+                                <li class="sort__li" data-value="black"><span class="sort__select_span"></span>black</li>
+                                <li class="sort__li" data-value="orange"><span class="sort__select_span"></span>orange</li>
+                            </ul>
+                        </div>
+
+                        <!--<select class="sort__select">
                             <option class="sort__color-example">Select an Option</option>
                             <option>Option 1</option>
                             <option>Option 2</option>
-                        </select>
+                        </select>-->
                     </div>
                 </div>
                 <div class="filter-column">
@@ -583,5 +594,18 @@
         </div>
     </footer>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var colorSelect = new CustomSelect({
+            elem: document.querySelector('.sort__select'),
+            list: document.querySelector('.sort__ul')
+        });
+
+        document.addEventListener('select', function(event) {
+            document.getElementById('result').innerHTML = event.detail.value;
+        });
+    });
+</script>
+<script src="scripts/customSelect.js"></script>
 </body>
 </html>
