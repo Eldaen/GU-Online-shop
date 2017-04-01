@@ -37,8 +37,9 @@
 
 
 .sale {
-    float: left;
-    padding: 97px 0 79px 230px;
+    width: 1165px;
+    margin: 0 auto;
+    padding: 97px 0 79px;
     box-sizing: border-box;
     font-size: 30px;
     font-weight: 900;

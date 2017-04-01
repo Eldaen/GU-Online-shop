@@ -1,5 +1,13 @@
+.catalog {
+    width: 1600px;
+    margin: 0 auto;
+}
 .catalog-header {
+
     background-color: #f8f3f4;
+
+}
+.catalog-header__content {
     width: 1600px;
     height: 148px;
     margin: 0 auto;
@@ -465,8 +473,7 @@
     box-sizing: border-box;
     border: 1px solid #ffffff;
     padding: 10px 8px 12px 42px;
-    background-image: url(../images/basket.png);
-    background-repeat: no-repeat;
+    background: url(../images/basket.png) no-repeat;
     background-position-x: 11px;
     background-position-y: 8px;
     border-radius: 4px;
@@ -477,6 +484,10 @@
     margin-bottom: 7px;
     cursor: pointer;
 }
+.row_card-link {
+    text-decoration: none;
+}
+
 .row_repeat {
     display: inline-block;
     width: 56px;
@@ -661,9 +672,13 @@
 .features {
     margin-top: 110px;
     background-color: #222224;
+}
+.features__content {
+    background-color: #222224;
     width: 1600px;
     height: 341px;
     letter-spacing: 0.5px;
+    margin: 0 auto;
 }
 
 .feature-first{

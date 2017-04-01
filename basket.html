@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Catalog</title>
-    <link rel="stylesheet" href="css/catalog.css?3">
-    <link rel="stylesheet" href="css/layout.css?2">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/basket.css?1">
+    <link rel="stylesheet" href="css/layout.css?1">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://use.fontawesome.com/9a77aa0bb2.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 <body>
 <div class="container">
     <header class="header">
         <div class="header_content">
-            <a href="index.html" class="brand-logo sale_left">Bran<span class="brand-logo_span">D</span></a>
+            <div class="brand-logo sale_left">Bran<span class="brand-logo_span">D</span></div>
             <div class="header_holder">
                 <div class="header_browse">Browse <i class="fa fa-caret-down browse_i" aria-hidden="true"></i>
                     <div class="drop-down header_drop-down">
@@ -68,7 +65,7 @@
         </div>
     </header>
     <nav class="nav">
-        <ul class="menu"><li class="menu_item"><a class="menu_link" href="index.html">Home</a><div class="drop-down nav_drop-down">
+        <ul class="menu"><li class="menu_item"><div class="menu_link">Home</div><div class="drop-down nav_drop-down">
             <span class="triangle menu_triangle">▲</span>
 
             <div class="menu_column">
@@ -114,7 +111,7 @@
 
             <div class="menu_promo">Super <br>Sale!</div>
 
-        </div></li><li class="menu_item menu__item_current"><div class="menu_link">Men</div><div class="drop-down nav_drop-down">
+        </div></li><li class="menu_item"><a class="menu_link" href="catalog.html">Men</a><div class="drop-down nav_drop-down">
             <span class="triangle menu_triangle">▲</span>
 
             <div class="menu_column">
@@ -160,7 +157,7 @@
 
             <div class="menu_promo">Super <br>Sale!</div>
 
-        </div></li><li class="menu_item"><a class="menu_link" href="#">Women</a><div class="drop-down nav_drop-down">
+        </div></li><li class="menu_item  menu__item_current"><a class="menu_link" href="#">Women</a><div class="drop-down nav_drop-down">
             <span class="triangle menu_triangle">▲</span>
 
             <div class="menu_column">
@@ -404,255 +401,105 @@
         </div>
     </header>
 
-    <div class="catalog">
-        <nav class="side-bar">
-            <form action="">
-                <input class="side-bar_button" name="menu" type="radio"  id="first_section" checked>
-                <label class="side-bar_label" for="first_section">CATEGORY<i class="fa fa-caret-up side-bar_i" aria-hidden="true"></i>
-                    <ul class="side-bar_list">
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                    </ul>
-                </label>
-                <input class="side-bar_button" name="menu" type="radio"  id="second_section">
-                <label class="side-bar_label" for="second_section">CATEGORY<i class="fa fa-caret-up side-bar_i" aria-hidden="true"></i>
-                    <ul class="side-bar_list">
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                    </ul>
-                </label>
-                <input class="side-bar_button" name="menu" type="radio"  id="third_section">
-                <label class="side-bar_label" for="third_section">CATEGORY<i class="fa fa-caret-up side-bar_i" aria-hidden="true"></i>
-                    <ul class="side-bar_list">
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                        <li class="side-bar_item"><a class="side-bar_link" href="#">asdasd</a></li>
-                    </ul>
-                </label>
-            </form>
-
-        </nav>
-        <section class="catalog_content">
-            <section class="filter">
-                <div class="filter-column">
-                    <h3 class="filter-column_header">Trending now</h3>
-                    <div class="filters type">
-                        <a class="type_link" href="#">Bohemian</a> <span class="type_span">|</span> <a class="type_link" href="#">Floral</a> <span class="type_span">|</span> <a
-                            class="type_link" href="#">Lace</a><br>
-                        <a class="type_link" href="#">Floral</a> <span class="type_span">|</span> <a class="type_link" href="#">Lace</a> <span class="type_span">|</span> <a
-                            class="type_link" href="#">Bohemian</a>
-                    </div>
+    <table class="cart basket_cart">
+        <tr class="cart__row table-header">
+            <th class="table-header__item table-header__item_first">Product Details</th>
+            <th class="table-header__item">unit price</th>
+            <th class="table-header__item">quantity</th>
+            <th class="table-header__item">shipping</th>
+            <th class="table-header__item">subtotal</th>
+            <th class="table-header__item">action</th>
+        </tr>
+        <tr class="cart__row row">
+            <td class="row__item row_first">
+                <a href="single_page.html"><img class="row__image" src="images/basket_first.png" alt=""></a>
+                <div class="row__desc">
+                    <h3 class="row__header">Mango  People  T-shirt</h3><br>
+                    Color: <span class="row__span">Red</span><br>
+                    Size: <span class="row__span">Xill</span>
                 </div>
-                <div class="filter-column">
-                    <h3 class="filter-column_header">size</h3>
-                    <div class="filters size">
-                        <form>
-                            <div class="filters_first-line">
-                                <input type="checkbox" class="size_checkbox size-first"><span class="size_span">XXS</span> <input type="checkbox" class="size_checkbox"><span class="size_span">XS</span> <input type="checkbox" class="size_checkbox"><span class="size_span">S</span> <input type="checkbox" class="size_checkbox"><span class="size_span" class="size_checkbox">M</span><br>
-                            </div>
-                            <div class="filters_second-line">
-                                <input type="checkbox" class="size_checkbox size-first"><span class="size_span" class="size_checkbox">L</span> <input type="checkbox" class="size_checkbox"><span class="size_span" class="size_checkbox">XL</span> <input type="checkbox" class="size_checkbox"><span class="size_span">XXL</span>
-                            </div>
-                        </form>
-                    </div>
+            </td>
+            <td class="row__item">$150</td>
+            <td class="row__item">
+                <input class="number row__number" type="number" value="2">
+            </td>
+            <td class="row__item">FREE</td>
+            <td class="row__item">$300</td>
+            <td class="row__item"><i class="fa fa-times-circle row__close" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="cart__row row">
+            <td class="row__item row_first">
+                <a href="single_page.html"><img class="row__image" src="images/basket_first.png" alt=""></a>
+                <div class="row__desc">
+                    <h3 class="row__header">Mango  People  T-shirt</h3><br>
+                    Color: <span class="row__span">Red</span><br>
+                    Size: <span class="row__span">Xill</span>
                 </div>
-                <div class="filter-column range">
-                    <h3 class="filter-column_header">price</h3>
-                    <div class="range_slider" id="slider-range"></div>
-                    <span class="range_lowest-price" id="lowest_price">$52</span>
-                    <span class="range_highest-price" id="highest_price">$400</span>
+            </td>
+            <td class="row__item">$150</td>
+            <td class="row__item">
+                <input class="number row__number" type="number" value="2">
+            </td>
+            <td class="row__item">FREE</td>
+            <td class="row__item">$300</td>
+            <td class="row__item"><i class="row__close fa fa-times-circle " aria-hidden="true"></i></td>
+        </tr>
+        <tr class="cart__row row">
+            <td class="row__item row_first">
+                <a href="single_page.html"><img class="row__image" src="images/basket_first.png" alt=""></a>
+                <div class="row__desc">
+                    <h3 class="row__header">Mango  People  T-shirt</h3><br>
+                    Color: <span class="row__span">Red</span><br>
+                    Size: <span class="row__span">Xill</span>
                 </div>
-            </section>
-            <div class="clr"></div>
-            <section class="sort">
-                <div class="sort_by-name">Sort By
-                    <i class="fa fa-caret-down sort_by-name-i" aria-hidden="true"></i>
-                    <select class="sort_select sort_by" name="sort_by" id="sort_by">
-                        <option value="name">Name</option>
-                        <option value="price">Price</option>
-                        <option value="color">Color</option>
-                        <option value="brand">Brand</option>
-                    </select>
-
-                </div>
-                <div class="sort_quantity">Show
-                    <i class="fa fa-caret-down sort_quantity-i" aria-hidden="true"></i>
-                    <select class="sort_select sort_show" name="show" id="show">
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="30">30</option>
-                        <option value="40">40</option>
-                    </select>
-                    </div>
-            </section>
-            <section class="product">
-                <div class="row row-first">
-                    <div href="single_page.html" class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item row-item-last">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item row-item-last">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-last">
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                    <div class="row_item row-item-last">
-                        <img class="row_image" src="http://nubcake.net/images/nubcake.jpg">
-                        <div class="row_price-block">
-                            <span class="row_name">Mango T-Shirt</span>
-                            <span class="row_price">$52.00</span>
-                        </div>
-                        <div class="row_image-hover">
-                            <a class="row_card-link" href="basket.html"><div class="row_card">Add to Cart</div></a>
-                            <div class="row_repeat"></div>
-                            <div class="row_favorite"><i class="fa fa-heart-o row_favorite-i" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <section class="pagination-holder">
-                    <div class="pag">
-                        <a class="pag_link pag-first-link" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                        <div class="pag_pages">
-                            <a class="pag_link" href="#"><span class="pag_active">1</span></a>
-                            <a class="pag_link" href="#">2</a>
-                            <a class="pag_link" href="#">3</a>
-                            <a class="pag_link" href="#">4</a>
-                            <a class="pag_link" href="#">5</a>
-                            <a class="pag_link pag-last-link" href="#">6</a>
-                        </div>
-                        ....
-                        <div class="pag_last-page">
-                            <a class="pag_link pag-last-link" href="#">20</a>
-                        </div>
-                        <a class="pag_link pag-last-link" href="#"><i class="fa fa-chevron-right pag_active" aria-hidden="true"></i></a>
-                    </div>
-                    <button class="button pag_show-all">View All</button>
-                </section>
-            </section>
-        </section>
+            </td>
+            <td class="row__item">$150</td>
+            <td class="row__item">
+                <input class="number row__number" type="number" value="2">
+            </td>
+            <td class="row__item">FREE</td>
+            <td class="row__item">$300</td>
+            <td class="row__item"><i class="fa fa-times-circle row__close" aria-hidden="true"></i></td>
+        </tr>
+    </table>
+    <div class="table-buttons">
+        <button class="button button_clear-b">cLEAR SHOPPING CART</button>
+        <button class="button button_cont-shop">cONTINUE sHOPPING</button>
         <div class="clr"></div>
     </div>
-    <section class="features">
-        <div class="features__content">
-            <div class="feature feature-first">
-                <img class="feature_image" src="images/delivery.png" alt=""><br>
-                <h2 class="feature_header">Free Delivery</h2>
-                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+    <div class="purchase">
+        <div class="purchase__item">
+            <h2 class="purchase__header">Shipping Adress</h2>
+            <div class="sort_by-name">
+                <i class="fa fa-caret-down sort_by-name-i" aria-hidden="true"></i>
+                <select class="sort_select sort_by" name="sort_by" id="sort_by">
+                    <option value="name">New York</option>
+                    <option value="price">Paris</option>
+                    <option value="color">Moscow</option>
+                    <option value="brand">Tokyo</option>
+                </select>
             </div>
-            <div class="feature">
-                <img class="feature_image" src="images/discount.png" alt=""><br>
-                <h2 class="feature_header">Sales & Discoun</h2>
-                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
-            </div>
-            <div class="feature">
-                <img class="feature_image" src="images/quality.png" alt=""><br>
-                <h2 class="feature_header">Quality Assurance</h2>
-                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+            <input type="text" class="purchase__state" placeholder="State">
+            <input type="number" class="number purchase__number" placeholder="State">
+            <button class="button purchase__button">get a quote</button>
+        </div>
+        <section class="purchase__item">
+            <h2 class="purchase__header">Coupon discount</h2>
+            <p class="purchase__p">Enter your coupon code if you have one</p>
+            <input type="text" class="purchase__state purchase__state-coupon" placeholder="State">
+            <button class="button button_coupon">Apply coupon</button>
+        </section>
+        <div class="purchase__item purchase__item_last">
+            <div class="proceed">
+                <div class="proceed-prices">
+                    <p class="proceed__p sub">Sub total: <span class="sub__span">$900</span></p>
+                    <p class="proceed__p grand">Grand total: <span class="grand__span">$900</span></p>
+                </div>
+                <button class="button proceed__checkout-button">Proceed to checkout</button>
             </div>
         </div>
-    </section>
+        <div class="clr"></div>
+    </div>
 
     <section class="subscribe index-margin">
         <div class="subscribe_bg"></div>
@@ -684,7 +531,7 @@
     </section>
     <footer class="info">
         <div class="brand-info">
-            <a href="index.html" class="brand-logo">Bran<span class="brand-logo_span">D</span></a>
+            <div class="brand-logo">Bran<span class="brand-logo_span">D</span></div>
             <div class="brand-info_text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda at atque autem cupiditate earum est ex excepturi hic ipsa labore, laboriosam mollitia obcaecati, provident, quam repellat sequi tempora voluptatum?
                 <br><br>Aperiam assumenda at atque autem cupiditate earum est ex excepturi hic ipsa labore, laboriosam mollitia obcaecati, provident, quam repellat sequi tempora voluptatum?
@@ -740,6 +587,6 @@
     </footer>
 </div>
 
-<script src="scripts/range.js"></script>
+
 </body>
 </html>

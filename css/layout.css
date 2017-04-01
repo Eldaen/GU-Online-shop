@@ -13,11 +13,12 @@
 }
 
 .container {
-    width: 1600px;
     margin: 0 auto;
 }
 
 .header {
+    width: 1600px;
+    margin: 0 auto;
     border: 1px solid #ececec;
     box-sizing: border-box;
     background-color: #ffffff;
@@ -165,6 +166,7 @@
     border-right: none;
     border-left: none;
     padding: 10px;
+    width: 283px;
 }
 
 .header_search-form {
@@ -202,7 +204,7 @@
 
 .basket {
     position: relative;
-    margin-left: 470px;
+    margin-left: 346px;
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -378,6 +380,8 @@
 }
 
 .nav {
+    width: 1600px;
+    margin: 0 auto;
     position: relative;
     background-color: #ffffff;
     height: 51px;
@@ -500,6 +504,7 @@
     background: url(../images/sub_bg.png);
     width: 1600px;
     height: 438px;
+    margin: 0 auto;
 }
 .index-margin { margin-top: 97px; }
 
@@ -644,7 +649,8 @@
 }
 
 .info {
-    margin: 109px 0 0 228px;
+    margin: 109px auto 0;
+    width: 1180px;
 }
 
 .brand-info {
