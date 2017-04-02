@@ -69,7 +69,7 @@
         </div>
     </header>
     <nav class="nav">
-        <ul class="menu"><li class="menu_item"><div class="menu_link"><a class="menu_link" href="index.html">Home</a></div><div class="drop-down nav_drop-down">
+        <ul class="menu"><li class="menu_item"><a class="menu_link" href="index.html">Home</a><div class="drop-down nav_drop-down">
             <span class="triangle menu_triangle">▲</span>
 
             <div class="menu_column">
@@ -605,6 +605,7 @@
             {
                total += (rows[i].innerHTML.substr(1))*1;
             }
+            $('.sub__span').text('$' + total);
             $('.grand__span').text('$' + total);
 
         })

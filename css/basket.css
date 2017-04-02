@@ -80,6 +80,9 @@
   text-align: center;
   cursor: pointer;
   text-transform: uppercase; }
+  .button:hover {
+    border: 1px solid #f16d7f;
+    color: #f16d7f; }
   .button_clear-b {
     float: left;
     width: 235px;
