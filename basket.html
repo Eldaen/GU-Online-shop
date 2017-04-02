@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/layout.css?1">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://use.fontawesome.com/9a77aa0bb2.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -419,12 +423,12 @@
                     Size: <span class="row__span">Xill</span>
                 </div>
             </td>
-            <td class="row__item">$150</td>
+            <td class="row__item row__single-price">$150</td>
             <td class="row__item">
-                <input class="number row__number" type="number" value="2">
+                <input class="number row__number" min="1" type="number" value="2">
             </td>
             <td class="row__item">FREE</td>
-            <td class="row__item">$300</td>
+            <td class="row__item row__total-price">$300</td>
             <td class="row__item"><i class="fa fa-times-circle row__close" aria-hidden="true"></i></td>
         </tr>
         <tr class="cart__row row">
@@ -436,12 +440,12 @@
                     Size: <span class="row__span">Xill</span>
                 </div>
             </td>
-            <td class="row__item">$150</td>
+            <td class="row__item row__single-price">$150</td>
             <td class="row__item">
-                <input class="number row__number" type="number" value="2">
+                <input class="number row__number" min="1" type="number" value="2">
             </td>
             <td class="row__item">FREE</td>
-            <td class="row__item">$300</td>
+            <td class="row__item row__total-price">$300</td>
             <td class="row__item"><i class="row__close fa fa-times-circle " aria-hidden="true"></i></td>
         </tr>
         <tr class="cart__row row">
@@ -453,12 +457,12 @@
                     Size: <span class="row__span">Xill</span>
                 </div>
             </td>
-            <td class="row__item">$150</td>
+            <td class="row__item row__single-price">$150</td>
             <td class="row__item">
-                <input class="number row__number" type="number" value="2">
+                <input class="number row__number" min="1" type="number" value="2">
             </td>
             <td class="row__item">FREE</td>
-            <td class="row__item">$300</td>
+            <td class="row__item row__total-price">$300</td>
             <td class="row__item"><i class="fa fa-times-circle row__close" aria-hidden="true"></i></td>
         </tr>
     </table>
@@ -480,7 +484,7 @@
                 </select>
             </div>
             <input type="text" class="purchase__state" placeholder="State">
-            <input type="number" class="number purchase__number" placeholder="State">
+            <input type="number" min="0" class="number purchase__number" placeholder="State">
             <button class="button purchase__button">get a quote</button>
         </div>
         <section class="purchase__item">
@@ -586,7 +590,26 @@
         </div>
     </footer>
 </div>
+<script>
+    $( document ).ready(function() {
 
+        $('.row__number').on('change', function ()
+        {
+            var row = this.closest('.cart__row');
+            var single = row.querySelector('.row__single-price');
+            row.querySelector('.row__total-price').innerText ='$' + single.innerHTML.substr(1) * this.value;
+
+            var rows = $('.row__total-price');
+            var total = 0;
+            for (var i = 0; i< rows.length; i++)
+            {
+               total += (rows[i].innerHTML.substr(1))*1;
+            }
+            $('.grand__span').text('$' + total);
+
+        })
+    });
+</script>
 
 </body>
 </html>

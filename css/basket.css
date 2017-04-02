@@ -58,7 +58,8 @@
   font-size: 13px;
   font-weight: 300; }
 .row__number {
-  padding-left: 22px;
+  padding-right: 8px;
+  text-align: right;
   width: 54px;
   height: 30px; }
 
