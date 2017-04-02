@@ -343,9 +343,8 @@
 }
 
 .item-card_button {
-    display: inline-block;
-    margin-top: 26px;
-    margin-bottom:122px;
+    display: block;
+    margin: 26px auto 122px;
     width: 537px;
     height: 55px;
     font-size: 16px;
@@ -355,9 +354,8 @@
     background-position-y: 16px;
 }
 .item-card_button:hover {
-    background: url(../images/basket_black.png) no-repeat;
     background-position-x: 186px;
-    background-position-y: 13px;
+    background-position-y: 16px;
 }
 
 .featured {

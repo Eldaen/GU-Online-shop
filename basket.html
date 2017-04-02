@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main Page</title>
+    <title>Basket</title>
     <link rel="stylesheet" href="css/basket.css?1">
     <link rel="stylesheet" href="css/layout.css?1">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -13,7 +13,7 @@
 <div class="container">
     <header class="header">
         <div class="header_content">
-            <div class="brand-logo sale_left">Bran<span class="brand-logo_span">D</span></div>
+            <a href="index.html" class="brand-logo sale_left">Bran<span class="brand-logo_span">D</span></a>
             <div class="header_holder">
                 <div class="header_browse">Browse <i class="fa fa-caret-down browse_i" aria-hidden="true"></i>
                     <div class="drop-down header_drop-down">
@@ -65,7 +65,7 @@
         </div>
     </header>
     <nav class="nav">
-        <ul class="menu"><li class="menu_item"><div class="menu_link">Home</div><div class="drop-down nav_drop-down">
+        <ul class="menu"><li class="menu_item"><div class="menu_link"><a class="menu_link" href="index.html">Home</a></div><div class="drop-down nav_drop-down">
             <span class="triangle menu_triangle">▲</span>
 
             <div class="menu_column">
@@ -392,16 +392,16 @@
     </nav>
     <header class="catalog-header">
         <div class="catalog-header__content">
-            <div class="catalog-header_name">
-                <h1 class="catalog-header_header">New Arrivals</h1>
+            <div class="catalog-header__name">
+                <h1 class="catalog-header__header">New Arrivals</h1>
             </div>
             <div class="bread-crumps">
-                <a class="bread-crumps_link" href="index.html">Home</a> / <a class="bread-crumps_link bread-crumps_link-current" href="catalog.html">Men</a> / <span class="bread-crumps_span">New Arrivals</span>
+                <a class="bread-crumps_link" href="index.html">Home</a> / <a class="bread-crumps_link bread-crumps_link_current" href="catalog.html">Men</a> / <span class="bread-crumps_span">New Arrivals</span>
             </div>
         </div>
     </header>
 
-    <table class="cart basket_cart">
+    <table class="cart basket-cart">
         <tr class="cart__row table-header">
             <th class="table-header__item table-header__item_first">Product Details</th>
             <th class="table-header__item">unit price</th>
