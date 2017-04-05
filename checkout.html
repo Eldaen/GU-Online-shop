@@ -408,27 +408,39 @@
             <article class="sign-up">
                 <h2 class="sign-up__header">Check as a guest or register</h2>
                 <p class="sign-up__p">Register with us for future convenience</p>
-                <ul class="sign-up__radio-list">
-                    <li class="sign-up__radio-item">
-                        <input class="sign-up__radio" type="radio" id="f-option" name="selector">
-                        <label for="f-option">Checkout as guest</label>
-                        <div class="check"></div>
-                    </li>
-                    <li class="sign-up__radio-item">
-                        <input class="sign-up__radio" type="radio" id="s-option" name="selector">
-                        <label for="s-option">Register</label>
-                        <div class="check"><div class="inside"></div></div>
-                    </li>
-                </ul>
-                <h2 class="sign-up__header sign-up_second-header">Register and save time!</h2>
-                <p class="sign-up__p">Register with us for future convenience</p>
-                <p class="sign-up__p-features p-features_first"><i class="i fa fa-angle-double-right" aria-hidden="true"> Fast and easy checkout</i></p>
-                <p class="sign-up__p-features"><i class="fa fa-angle-double-right" aria-hidden="true"> Easy access to your order history and status</i></p>
-                <button class="button sign-up__button">Continue</button>
+                <form action="">
+                    <ul class="sign-up__radio-list">
+                        <li class="sign-up__radio-item">
+                            <input class="sign-up__radio" type="radio" id="f-option" name="selector">
+                            <label for="f-option">Checkout as guest</label>
+                            <div class="check"></div>
+                        </li>
+                        <li class="sign-up__radio-item">
+                            <input class="sign-up__radio" type="radio" id="s-option" name="selector">
+                            <label for="s-option">Register</label>
+                            <div class="check"><div class="inside"></div></div>
+                        </li>
+                    </ul>
+                    <h2 class="sign-up__header sign-up_second-header">Register and save time!</h2>
+                    <p class="sign-up__p">Register with us for future convenience</p>
+                    <p class="sign-up__p-features p-features_first"><i class="i fa fa-angle-double-right" aria-hidden="true"> Fast and easy checkout</i></p>
+                    <p class="sign-up__p-features"><i class="fa fa-angle-double-right" aria-hidden="true"> Easy access to your order history and status</i></p>
+                    <button type="submit" class="button sign-up__button">Continue</button>
+                </form>
+
             </article>
             <article class="sign-in">
                 <h2 class="sign-in__header">Already Registered?</h2>
                 <p class="sign-in__p">Please log in below</p>
+                <form action="" class="login">
+                    <label class="sign-in__label" for="e-mail">E-mail address <span class="login__required">*</span></label>
+                    <input required type="email" id="e-mail" class="sign-in__login-input">
+                    <label required class="sign-in__label" for="password">Password <span class="login__required">*</span></label>
+                    <input type="password" id="password" class="sign-in__login-input">
+                    <span class="login__required-fields">* Required fields</span>
+                    <button type="submit" class="button login__button">Login</button>
+                    <a href="#" class="login__password">Forgot password?</a>
+                </form>
             </article>
         </section>
         <div class="clr"></div>
