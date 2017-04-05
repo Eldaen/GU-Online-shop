@@ -47,6 +47,8 @@
     margin-top: 85px; }
 
 .address {
+  float: left;
+  width: 100%;
   padding-bottom: 79px;
   border-bottom: 1px solid #e8e8e8; }
   .address__step-number {
@@ -62,8 +64,12 @@
     text-transform: uppercase; }
 
 .sign-up {
-  margin-top: 35px;
-  margin-left: 35px; }
+  float: left;
+  width: 50%;
+  padding: 35px 0 0 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
   .sign-up__header {
     color: #222222;
     font-size: 13px;
@@ -172,5 +178,23 @@ input[type=radio]:checked ~ .check {
     color: #f16d7f; }
   .button:focus {
     outline: none; }
+
+.sign-in {
+  width: 50%;
+  float: left;
+  padding-top: 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .sign-in__header {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .sign-in__p {
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 34px; }
 
 /*# sourceMappingURL=checkout.css.map */
