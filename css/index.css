@@ -150,6 +150,10 @@
     margin-top: 35px;
 }
 
+.row_card-link {
+    text-decoration: none;
+}
+
 .row_item:hover {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
 
@@ -256,6 +260,7 @@
 }
 .row_item-link {
     text-decoration: none;
+    cursor: pointer;
 }
 .row_price-block {
     padding: 19px 15px;

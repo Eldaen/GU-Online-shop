@@ -487,6 +487,10 @@
 .row_card-link {
     text-decoration: none;
 }
+.row_item-link {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .row_repeat {
     display: inline-block;

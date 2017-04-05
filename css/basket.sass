@@ -4,7 +4,6 @@ $width-all : 1140px
   text-align: center
   border-collapse: collapse
 
-
 .table-header
   &__item
     text-transform: uppercase
@@ -162,22 +161,6 @@ $width-all : 1140px
     font-size: 14px
     font-weight: 300
 
-
-.sort_by-name
-  position: relative
-  margin-top: 21px
-  padding: 7px
-  color:  #b1b1b1
-  font-size: 13px
-  font-weight: 300
-  border: 1px solid #ebebeb
-  box-sizing: border-box
-  background-color:  #ffffff
-  width: 355px
-  height: 45px
-  line-height: 26px
-  text-align: left
-
 .sort_by
   position: relative
   left: -8px
@@ -191,6 +174,20 @@ $width-all : 1140px
   line-height: 26px
   text-align: left
   width: 355px
+  &-name
+    position: relative
+    margin-top: 21px
+    padding: 7px
+    color:  #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    border: 1px solid #ebebeb
+    box-sizing: border-box
+    background-color:  #ffffff
+    width: 355px
+    height: 45px
+    line-height: 26px
+    text-align: left
   &-name-i
     color: #6f6e6e
     z-index: 0
@@ -203,18 +200,12 @@ $width-all : 1140px
     line-height: 20px
     text-align: left
 
-
-
-
 .sort_select
   background: transparent
   -moz-appearance: none
   -webkit-appearance: none
-
-.sort_select:focus
-  outline: none
-
-
+  &:focus
+    outline: none
 .table-buttons
   width: 1140px
   margin: 45px auto 0
@@ -223,7 +214,6 @@ $width-all : 1140px
   width: $width-all
   margin: 66px auto 0
   padding-left: 38px
-
 
 .catalog-header
   background-color: #f8f3f4
@@ -243,8 +233,6 @@ $width-all : 1140px
     text-align: left
     text-transform: uppercase
 
-
-
 .bread-crumps
   float: left
   width: 50%
@@ -255,25 +243,19 @@ $width-all : 1140px
   font-weight: 300
   line-height: 20px
   text-transform: uppercase
-
-
-.bread-crumps_link
-  color: #636363
-  text-decoration: none
-
-.bread-crumps_link-current
-  display: inline-block
-
-.bread-crumps_link:hover
-  color: #f16d7f
-
-
-.bread-crumps_span
-  color: #f16d7f
-  font-size: 14px
-  font-weight: 700
-  line-height: 20px
-  text-align: center
+  &_link
+    color: #636363
+    text-decoration: none
+    &:hover
+      color: #f16d7f
+    &-current
+      display: inline-block
+  &_span
+    color: #f16d7f
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    text-align: center
 
 .proceed
   background-color:  #f5f3f3
@@ -296,7 +278,6 @@ $width-all : 1140px
     font-size: 16px
     font-weight: 700
     text-align: center
-
 
 .sub
   color:  #4a4a4a
