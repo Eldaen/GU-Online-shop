@@ -46,22 +46,25 @@
   .checkout_checkout-page {
     margin-top: 85px; }
 
-.address {
+.steps {
   float: left;
   width: 100%;
   padding-bottom: 79px;
   border-bottom: 1px solid #e8e8e8; }
-  .address__step-number {
+  .steps__step-number {
     margin-right: 9px;
     color: #222222;
     font-size: 16px;
     font-weight: 700; }
-  .address__header {
+  .steps__header {
     display: inline;
     color: #222222;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase; }
+  .steps_closed {
+    padding-bottom: 24px;
+    padding-top: 29px; }
 
 .sign-up {
   float: left;

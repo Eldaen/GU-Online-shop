@@ -80,26 +80,32 @@
   text-align: center;
   cursor: pointer;
   text-transform: uppercase; }
-  .button:hover {
-    border: 1px solid #f16d7f;
-    color: #f16d7f; }
   .button_clear-b {
     float: left;
     width: 235px;
     height: 50px; }
+    .button_clear-b:hover {
+      border: 1px solid #f16d7f;
+      color: #f16d7f; }
   .button_cont-shop {
     float: right;
     width: 225px;
     height: 50px; }
+    .button_cont-shop:hover {
+      border: 1px solid #f16d7f;
+      color: #f16d7f; }
   .button_coupon {
     width: 118px;
     height: 35px;
     margin-top: 25px;
-    border: 1px solid #eaeaea;
-    color: #4a4a4a;
+      margin-top-border: 1px solid #eaeaea;
+      margin-top-color: #4a4a4a;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase; }
+    .button_coupon:hover {
+      border: 1px solid #f16d7f;
+      color: #f16d7f; }
   .button:focus {
     outline: none; }
 
@@ -266,6 +272,8 @@
     border-bottom: 1px solid #eaeaea;
     height: 64px; }
   .proceed__checkout-button {
+    padding-top: 14px;
+    text-decoration: none;
     margin-top: 17px;
     background-color: #f16d7f;
     width: 273px;
